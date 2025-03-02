@@ -6,13 +6,13 @@
         {
             //Pierwszy program - rozgrzewka
 
-            //zadanie 1
+            //Zadanie1
 
-             Console.WriteLine("Podaj swoje imię:");
-             var name = Console.ReadLine();
-             Console.WriteLine("Hello " + name);
+             //Console.WriteLine("Podaj swoje imię:");
+             //var name = Console.ReadLine();
+             //Console.WriteLine("Hello " + name);
 
-            //zadanie 2
+            //Zadanie2
 
              int result = 5 + 9;
 
@@ -63,7 +63,7 @@
                 Console.WriteLine("OR: " + or);
                 Console.WriteLine("NEGATIVE: " + negative);
 
-                // Zadanie 4 - Operacje matematyczne
+                // Zadanie4 
                 int a = 5;
                 int b = 12;
 
@@ -93,6 +93,41 @@
                 // Spostrzeżenia:
                 // Wynik operacji to "Ala ma kota." ponieważ operacja + dla stringów łączy je w jeden ciąg znaków.
                 // Warto dodać spacje na końcu pierwszych dwóch stringów, aby wynik wyglądał poprawnie.
+
+                //Instrukcje sterujące i pętle
+
+                //Zadanie1
+                
+                int n1 = 10;
+                int n2 = 20;
+
+                if (n1 > n2)
+                {
+                    Console.WriteLine($"{n1} jest większe od {n2}");
+                }
+                else if (n1 < n2)
+                {
+                    Console.WriteLine($"{n2} jest większe od {n1}");
+                }
+                else
+                {
+                    Console.WriteLine($"{n1} jest równe {n2}");
+                }
+
+                // Zadanie2
+                
+                for (int i = 0; i < 10; i++)
+                {
+                    Console.WriteLine("C#");
+                }
+
+                
+                int count = 0;
+                while (count < 10)
+                {
+                    Console.WriteLine("C#");
+                    count++;
+                }
             }
         }
     }
