@@ -128,7 +128,79 @@
                     Console.WriteLine("C#");
                     count++;
                 }
+
+                // Zadanie3
+                int n = 10;
+                for (int i = 0; i <= n; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        Console.WriteLine($"{i} - Parzysta");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{i} - Nieparzysta");
+                    }
+                }
+                // Zadanie4
+                int gN = 5; 
+                for (int i = 1; i <= gN; i++)
+                {
+                    for (int j = 1; j <= i; j++)
+                    {
+                        Console.Write("* ");
+                    }
+                    Console.WriteLine();
+                }
+                int gn = 3;
+                for (int i = 1; i <= gn; i++)
+                {
+                    for (int j = 1; j <= i; j++)
+                    {
+                        Console.Write("* ");
+                    }
+                    Console.WriteLine();
+                }
+
+                // Zadanie5
+                int exam = 88;
+
+                if (exam < 0 || exam > 100)
+                {
+                    Console.WriteLine("Wartość poza zakresem.");
+                }
+                else if (exam <= 39)
+                {
+                    Console.WriteLine("Ocena Niedostateczna");
+                }
+                else if (exam <= 54)
+                {
+                    Console.WriteLine("Ocena Dopuszczająca");
+                }
+                else if (exam <= 69)
+                {
+                    Console.WriteLine("Ocena Dostateczna");
+                }
+                else if (exam <= 84)
+                {
+                    Console.WriteLine("Ocena Dobra");
+                }
+                else if (exam <= 98)
+                {
+                    Console.WriteLine("Ocena Bardzo Dobra");
+                }
+                else
+                {
+                    Console.WriteLine("Ocena Celująca");
+                }
+                //Kolekcje
+                // Zadanie1 
+                string[] colors = { "Niebieski", "Zielony", "Żółty", "Czerwony" };
+                Console.WriteLine($"Mój pierwszy kolor to: {colors[0]}");
+                Console.WriteLine($"Mój ostatni kolor to: {colors[colors.Length - 1]}");
+
             }
+
         }
     }
 }
