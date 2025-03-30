@@ -199,6 +199,39 @@
                 Console.WriteLine($"Mój pierwszy kolor to: {colors[0]}");
                 Console.WriteLine($"Mój ostatni kolor to: {colors[colors.Length - 1]}");
 
+                // Zadanie 2 
+                int[] numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+                Console.WriteLine("\n--- Pętla for ---");
+                for (int i = 0; i < numbers.Length; i++)
+                {
+                    Console.WriteLine($"Liczba: {numbers[i]}");
+                }
+
+                Console.WriteLine("\n--- Pętla foreach ---");
+                foreach (int number2 in numbers)
+                {
+                    Console.WriteLine($"Liczba: {number2}");
+                }
+
+                Console.WriteLine("\n--- Pętla while ---");
+                int index = 0;
+                while (index < numbers.Length)
+                {
+                    Console.WriteLine($"Liczba: {numbers[index]}");
+                    index++;
+                }
+                // Zadanie 3 
+                List<string> fruits = new List<string> { "Pomidor", "Jabłko", "Marchewka", "Banana" };
+                Console.WriteLine("\nLista owoców przed usunięciem:");
+                Console.WriteLine(string.Join(", ", fruits));
+
+                // Usuwanie pierwszego i ostatniego elementu
+                fruits.RemoveAt(0); // usuwa "Pomidor"
+                fruits.RemoveAt(fruits.Count - 1); // usuwa ostatni element ("Banana")
+
+                Console.WriteLine("\nLista owoców po usunięciu:");
+                Console.WriteLine(string.Join(", ", fruits));
             }
 
         }
